@@ -5,33 +5,39 @@
 /* { margin: 0; box-sizing: border-box; } */
 
 body { 
-    font-size: 16px; 
+    font-size: 20px; 
     line-height: 32px;
     font-family:Ubuntu,sans-serif;
-    color:#5514eb;
+    color:#000000;
+    background-image:url(https://s2.best-wallpaper.net/wallpaper/1920x1200/1310/Countryside-nature-scenery-fence-hills-road-trees_1920x1200.jpg);
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 h1 {
     font-size: 2rem;
-    color:#05030a;
+    color:#000000;
 }
+.main {
+background:#f8f8f894;
 
+}
 h2 {
     font-size: 1.5rem;
-    text-align: center;
+   /* text-align: center;*/
     border-bottom: 2px solid rgb(216, 89, 51);
 }
 
 header, main, footer {
     margin: 1.25rem auto;
     padding: .5rem;
-    max-width: 600px;
+    max-width: 1000px;
 }
 
 header, footer, footer a {
-    text-align: center;
-    background-color:#1eb1a4;
-    color: rgb(198, 206, 87);
+   /* text-align: center;*/
+   /* background-color:#1eb1a4;*/
+    color: rgb(5, 5, 5);
 }
 
 header img {
@@ -41,6 +47,7 @@ header img {
 }
 
 footer {
+    background:#f8f8f8;
     font-size: 0.75rem;
 }
 
