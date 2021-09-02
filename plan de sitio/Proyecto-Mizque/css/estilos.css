@@ -280,6 +280,15 @@ footer{
     margin-bottom: 60px;
 }
 
+table, tr, td{
+        border: 1px solid black;
+        border-collapse: collapse;
+        background-color: #764ba283;       
+    }
+tr, td {
+    padding: 10px;
+}
+
 
 
 @media screen and (max-width:800px){

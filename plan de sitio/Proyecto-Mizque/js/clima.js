@@ -1,4 +1,4 @@
-const requestURL= "https://api.openweathermap.org/data/2.5/weather?id=3910291&units=metric&appid=9062e0e181557a2fff0a54bdca6eb699";
+/*const requestURL= "https://api.openweathermap.org/data/2.5/weather?id=3910291&units=metric&appid=9062e0e181557a2fff0a54bdca6eb699";
 const request = new XMLHttpRequest();
 request.open('GET',requestURL);
 
@@ -33,4 +33,25 @@ function Most_info(objson)
     En1.appendChild(temperatura_max);
     En1.appendChild(temperatura_min);
     En1.appendChild(humedad);
+}*/
+
+
+let weatherRequest = new XMLHttpRequest();
+let apiURLstring = "https://api.openweathermap.org/data/2.5/weather?id=3910291&units=metric&appid=9062e0e181557a2fff0a54bdca6eb699";
+
+weatherRequest.open('GET', apiURLstring, true);
+weatherRequest.send();
+
+weatherRequest.onload = function(){
+
+    let weatherData = JSON.parse(weatherRequest.responseText);
+    console.log(weatherData);
+
+    var max = weatherData.main.temp_max;
+    var min = weatherData.main.temp_min;
+        
+    document.getElementById('actual').innerHTML = weatherData.main.temp;
+    document.getElementById('maxima').innerHTML = weatherData.main.temp_max;
+    document.getElementById('humedad').innerHTML = weatherData.main.humidity;
+    document.getElementById('minima').innerHTML = weatherData.main.temp_min;
 }
