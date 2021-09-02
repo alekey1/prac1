@@ -14,7 +14,7 @@ request.onload = function()
 }
 function Most_info(objson)
 {
-    var En1 = document.querySelector('header');
+    var En1 = document.querySelector('footer');
     var Ciudad= document.createElement('h1');
     var temperatura_actual= document.createElement('h2');
     var temperatura_max= document.createElement('h3');
