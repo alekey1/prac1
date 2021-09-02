@@ -38,7 +38,7 @@ header{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    color: rgb(219, 96, 39);
+    color: rgba(3, 45, 230, 0.767);
 }
 .menuicono{
     position: fixed;
@@ -245,7 +245,7 @@ footer{
 }
 
 .social-media{
-    width: 50%;
+    width: 100%;
     display: flex;
     justify-content: flex-end;
 }
@@ -279,6 +279,7 @@ footer{
     background: #ffff;
     margin-bottom: 60px;
 }
+
 
 @media screen and (max-width:800px){
     .menu-navegacion{
